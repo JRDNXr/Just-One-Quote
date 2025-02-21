@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FaMoon, FaSun, FaRedo } from "react-icons/fa"; // Import moon, sun, and refresh icons from React Icons
+import { FaMoon, FaSun, FaRedo, FaCopy, FaCheck } from "react-icons/fa"; // Import moon, sun, refresh, copy, and checkmark icons from React Icons
 
 const Main = () => {
     // Load dark mode setting from localStorage (default is false)
@@ -10,6 +10,7 @@ const Main = () => {
     const [quotes, setQuotes] = useState([]);
     const [randomQuote, setRandomQuote] = useState(""); // State to store a single random quote when the component mounts
     const [isSpinning, setIsSpinning] = useState(false); // State to track if the refresh button should spin
+    const [copied, setCopied] = useState(false); // State to track if the copy button was clicked
 
     // https://type.fit/api/quotes
 
@@ -47,6 +48,16 @@ const Main = () => {
     const quoteText = splitQuote[0]?.trim();
     const authorName = splitQuote[1]?.trim()
 
+    const copyToClipboard = () => {
+        const fullQuote = authorName ? `${quoteText} - ${authorName}` : quoteText;
+        navigator.clipboard.writeText(fullQuote)
+            .then(() => {
+                setCopied(true);
+                setTimeout(() => setCopied(false), 2000);
+            })
+            .catch((err) => console.error("Failed to copy:", err));
+    };
+
     return (
         <div
             style={{
@@ -79,18 +90,18 @@ const Main = () => {
                     onClick={refreshPage}
                     style={{
                         position: "fixed",
-                        bottom: "100px", // Adjusted to move it higher
+                        bottom: "180px",
                         right: "20px",
                         padding: "20px",
                         fontSize: "30px",
                         cursor: "pointer",
-                        backgroundColor: "#fff", // White background for the refresh button
+                        backgroundColor: "#fff",
                         border: "none",
                         borderRadius: "50%",
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
-                        width: "70px", // Button size
+                        width: "70px",
                         height: "70px",
                         boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
                         transition: "transform 0.2s ease-in-out",
@@ -102,13 +113,41 @@ const Main = () => {
                     <FaRedo color="#000" size={24} />
                 </button>
 
+                {/* Copy button */}
+                <button
+                    onClick={copyToClipboard}
+                    style={{
+                        position: "fixed",
+                        bottom: "100px",
+                        right: "20px",
+                        padding: "20px",
+                        fontSize: "30px",
+                        cursor: "pointer",
+                        backgroundColor: copied ? "#4caf50" : "#fff",
+                        border: "none",
+                        borderRadius: "50%",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        width: "70px",
+                        height: "70px",
+                        boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+                        transition: "transform 0.2s ease-in-out",
+                    }}
+                    onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.1)")}
+                    onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
+                    className={isSpinning ? "spinning" : ""}
+                >
+                    {copied ? <FaCheck color="#fff" size={24} /> : <FaCopy color="#000" size={24} />}
+                </button>
+
                 {/* Dark mode button */}
                 <button
                     onClick={toggleDarkMode}
                     style={{
                         position: "fixed",
-                        bottom: "20px", // Dark mode button stays at the bottom
-                        right: "20px", // Place it on the right
+                        bottom: "20px",
+                        right: "20px",
                         padding: "20px",
                         fontSize: "30px",
                         cursor: "pointer",

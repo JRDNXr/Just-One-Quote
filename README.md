@@ -1,6 +1,6 @@
 # Just One Quote
 
-Created with love in React.j
+Created with love in React.js
 
 
 Just One Quote features a single quote or phrase from its internal library. This single phrase is then displayed on the page.

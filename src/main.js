@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { FaMoon, FaSun, FaRedo, FaCopy, FaCheck } from "react-icons/fa"; // Import moon, sun, refresh, copy, and checkmark icons from React Icons
 
 const Main = () => {
@@ -13,6 +13,10 @@ const Main = () => {
     const [copied, setCopied] = useState(false); // State to track if the copy button was clicked
     const [isAnimating, setIsAnimating] = useState(false); // State to track if the background is animating
     const [textColorClass, setTextColorClass] = useState(""); // State to track the text color class
+
+    const splitQuote = randomQuote.split("|");
+    const quoteText = splitQuote[0]?.trim();
+    const authorName = splitQuote[1]?.trim()
 
     useEffect(() => {
         fetch("/quotes.txt")
@@ -50,10 +54,6 @@ const Main = () => {
         setIsSpinning(true); // Start spinning when the button is clicked
         window.location.reload();
     };
-
-    const splitQuote = randomQuote.split("|");
-    const quoteText = splitQuote[0]?.trim();
-    const authorName = splitQuote[1]?.trim()
 
     const copyToClipboard = () => {
         const fullQuote = authorName ? `${quoteText} - ${authorName}` : quoteText;
@@ -98,7 +98,7 @@ const Main = () => {
                         style={{
                             fontStyle: "italic",
                             fontSize: "21px",
-                            //color: isDarkMode ? "#ecf0f1" : "#2c3e50",
+                            color: isDarkMode ? "#ecf0f1" : "#2c3e50",
                         }}
                     >
                         - {authorName}

@@ -12,8 +12,6 @@ const Main = () => {
     const [isSpinning, setIsSpinning] = useState(false); // State to track if the refresh button should spin
     const [copied, setCopied] = useState(false); // State to track if the copy button was clicked
 
-    // https://type.fit/api/quotes
-
     useEffect(() => {
         fetch("/quotes.txt")
             .then((response) => response.text())

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { FaMoon, FaSun, FaRedo, FaCopy, FaCheck } from "react-icons/fa"; // Import moon, sun, refresh, copy, and checkmark icons from React Icons
 
 const Main = () => {
@@ -11,8 +11,12 @@ const Main = () => {
     const [randomQuote, setRandomQuote] = useState(""); // State to store a single random quote when the component mounts
     const [isSpinning, setIsSpinning] = useState(false); // State to track if the refresh button should spin
     const [copied, setCopied] = useState(false); // State to track if the copy button was clicked
+    const [isAnimating, setIsAnimating] = useState(false); // State to track if the background is animating
+    const [textColorClass, setTextColorClass] = useState(""); // State to track the text color class
 
-    // https://type.fit/api/quotes
+    const splitQuote = randomQuote.split("|");
+    const quoteText = splitQuote[0]?.trim();
+    const authorName = splitQuote[1]?.trim()
 
     useEffect(() => {
         fetch("/quotes.txt")
@@ -31,11 +35,18 @@ const Main = () => {
 
     // Toggle dark mode state
     const toggleDarkMode = () => {
-        setIsDarkMode((prevMode) => {
-            const newMode = !prevMode;
-            localStorage.setItem("darkMode", newMode);
-            return newMode;
-        });
+        setIsAnimating(true);
+        setTimeout(() => {
+            setTextColorClass(isDarkMode ? "light-text" : "dark-text");
+        }, 380); // Halfway through the animation
+        setTimeout(() => {
+            setIsDarkMode((prevMode) => {
+                const newMode = !prevMode;
+                localStorage.setItem("darkMode", newMode);
+                return newMode;
+            });
+            setIsAnimating(false);
+        }, 1000); // Duration of the wipe animation
     };
 
     // Refresh the page
@@ -43,10 +54,6 @@ const Main = () => {
         setIsSpinning(true); // Start spinning when the button is clicked
         window.location.reload();
     };
-
-    const splitQuote = randomQuote.split("|");
-    const quoteText = splitQuote[0]?.trim();
-    const authorName = splitQuote[1]?.trim()
 
     const copyToClipboard = () => {
         const fullQuote = authorName ? `${quoteText} - ${authorName}` : quoteText;
@@ -71,10 +78,23 @@ const Main = () => {
                 transition: "all 0.3s ease",
             }}
         >
-            <div>
-                <h1>{quoteText}</h1>
+            {isAnimating && (
+                <div className="wipe-overlay" style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "100%",
+                    backgroundColor: isDarkMode ? "#ecf0f1" : "#141f2c",
+                    animation: isDarkMode ? "wipeUp 1s forwards" : "wipeDown 1s forwards",
+                    zIndex: 1,
+                }}></div>
+            )}
+            <div style={{ position: "relative", zIndex: 2 }}>
+                <h1 className={textColorClass}>{quoteText}</h1>
                 {authorName && (
                     <p
+                        className={textColorClass}
                         style={{
                             fontStyle: "italic",
                             fontSize: "21px",
@@ -113,6 +133,7 @@ const Main = () => {
                     <FaRedo color="#000" size={24} />
                 </button>
 
+                {/* Copy button */}
                 <button
                     onClick={copyToClipboard}
                     style={{
@@ -135,6 +156,7 @@ const Main = () => {
                     }}
                     onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.1)")}
                     onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
+                    className={copied ? "copied" : ""}
                 >
                     {copied ? (
                         <FaCheck
@@ -226,6 +248,24 @@ const Main = () => {
                     }
                 }
 
+                @keyframes wipeDown {
+                    0% {
+                        transform: translateY(-100%);
+                    }
+                    100% {
+                        transform: translateY(0);
+                    }
+                }
+
+                @keyframes wipeUp {
+                    0% {
+                        transform: translateY(100%);
+                    }
+                    100% {
+                        transform: translateY(0);
+                    }
+                }
+
                 .spinning {
                     animation: spin 1s linear infinite;
                 }
@@ -243,6 +283,14 @@ const Main = () => {
                         transform: scale(1);
                         opacity: 1;
                     }
+                }
+
+                .light-text {
+                    color: #2c3e50 !important;
+                }
+
+                .dark-text {
+                    color: #ecf0f1 !important;
                 }
             `}</style>
         </div>

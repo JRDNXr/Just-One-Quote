@@ -113,7 +113,6 @@ const Main = () => {
                     <FaRedo color="#000" size={24} />
                 </button>
 
-                {/* Copy button */}
                 <button
                     onClick={copyToClipboard}
                     style={{
@@ -137,7 +136,17 @@ const Main = () => {
                     onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.1)")}
                     onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
                 >
-                    {copied ? <FaCheck color="#fff" size={24} /> : <FaCopy color="#000" size={24} />}
+                    {copied ? (
+                        <FaCheck
+                            color="#fff"
+                            size={24}
+                            style={{
+                                animation: "checkmarkAnim 0.5s ease-out",
+                            }}
+                        />
+                    ) : (
+                        <FaCopy color="#000" size={24} />
+                    )}
                 </button>
 
                 {/* Dark mode button */}
@@ -219,6 +228,21 @@ const Main = () => {
 
                 .spinning {
                     animation: spin 1s linear infinite;
+                }
+
+                @keyframes checkmarkAnim {
+                    0% {
+                        transform: scale(0);
+                        opacity: 0;
+                    }
+                    50% {
+                        transform: scale(1.2);
+                        opacity: 1;
+                    }
+                    100% {
+                        transform: scale(1);
+                        opacity: 1;
+                    }
                 }
             `}</style>
         </div>

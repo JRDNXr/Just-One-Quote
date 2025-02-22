@@ -136,7 +136,6 @@ const Main = () => {
                     }}
                     onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.1)")}
                     onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
-                    className={isSpinning ? "spinning" : ""}
                 >
                     {copied ? <FaCheck color="#fff" size={24} /> : <FaCopy color="#000" size={24} />}
                 </button>

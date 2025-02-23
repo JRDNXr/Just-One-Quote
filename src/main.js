@@ -1,5 +1,7 @@
-import React, { useState, useEffect, useRef } from "react";
-import { FaMoon, FaSun, FaRedo, FaCopy, FaCheck } from "react-icons/fa"; // Import moon, sun, refresh, copy, and checkmark icons from React Icons
+import React, { useState, useEffect } from "react";
+import { FaMoon, FaSun, FaRedo, FaCopy, FaCheck } from "react-icons/fa"; // Import moon, sun, refresh, copy, and
+// checkmark icons from React Icons
+import './styles/main.css';
 
 const Main = () => {
     // Load dark mode setting from localStorage (default is false)
@@ -215,84 +217,6 @@ const Main = () => {
                     )}
                 </button>
             </div>
-
-            <style jsx>{`
-                @keyframes fadeUp {
-                    0% {
-                        opacity: 0;
-                        transform: translateY(-30px);
-                    }
-                    100% {
-                        opacity: 1;
-                        transform: translateY(0);
-                    }
-                }
-
-                @keyframes fadeDown {
-                    0% {
-                        opacity: 0;
-                        transform: translateY(30px);
-                    }
-                    100% {
-                        opacity: 1;
-                        transform: translateY(0);
-                    }
-                }
-
-                @keyframes spin {
-                    0% {
-                        transform: rotate(0deg);
-                    }
-                    100% {
-                        transform: rotate(360deg);
-                    }
-                }
-
-                @keyframes wipeDown {
-                    0% {
-                        transform: translateY(-100%);
-                    }
-                    100% {
-                        transform: translateY(0);
-                    }
-                }
-
-                @keyframes wipeUp {
-                    0% {
-                        transform: translateY(100%);
-                    }
-                    100% {
-                        transform: translateY(0);
-                    }
-                }
-
-                .spinning {
-                    animation: spin 1s linear infinite;
-                }
-
-                @keyframes checkmarkAnim {
-                    0% {
-                        transform: scale(0);
-                        opacity: 0;
-                    }
-                    50% {
-                        transform: scale(1.2);
-                        opacity: 1;
-                    }
-                    100% {
-                        transform: scale(1);
-                        opacity: 1;
-                    }
-                }
-
-                .light-text {
-                    color: #2c3e50 !important;
-                }
-
-                .dark-text {
-                    color: #ecf0f1 !important;
-                }
-            `}</style>
         </div>
     );
 };

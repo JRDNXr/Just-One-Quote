@@ -35,8 +35,29 @@ const Main = () => {
         document.documentElement.style.backgroundColor = isDarkMode ? "#141f2c" : "#ecf0f1";
     }, [isDarkMode]);
 
-    // Toggle dark mode state
+    // Refresh Quote
+    const refreshPage = () => {
+        setIsSpinning(true); // Start spinning when the button is clicked
+        window.location.reload();
+    };
+
+    // Copy Quote
+    const copyToClipboard = () => {
+        if (copied) return; // Prevent toggling while animating
+
+        const fullQuote = authorName ? `${quoteText} - ${authorName}` : quoteText;
+        navigator.clipboard.writeText(fullQuote)
+            .then(() => {
+                setCopied(true);
+                setTimeout(() => setCopied(false), 2000);
+            })
+            .catch((err) => console.error("Failed to copy:", err));
+    };
+
+    // Dark Mode / Light Mode Toggle
     const toggleDarkMode = () => {
+        if (isAnimating) return; // Prevent toggling while animating
+
         setIsAnimating(true);
         setTimeout(() => {
             setTextColorClass(isDarkMode ? "light-text" : "dark-text");
@@ -49,22 +70,6 @@ const Main = () => {
             });
             setIsAnimating(false);
         }, 1000); // Duration of the wipe animation
-    };
-
-    // Refresh the page
-    const refreshPage = () => {
-        setIsSpinning(true); // Start spinning when the button is clicked
-        window.location.reload();
-    };
-
-    const copyToClipboard = () => {
-        const fullQuote = authorName ? `${quoteText} - ${authorName}` : quoteText;
-        navigator.clipboard.writeText(fullQuote)
-            .then(() => {
-                setCopied(true);
-                setTimeout(() => setCopied(false), 2000);
-            })
-            .catch((err) => console.error("Failed to copy:", err));
     };
 
     return (
@@ -138,6 +143,7 @@ const Main = () => {
                 {/* Copy button */}
                 <button
                     onClick={copyToClipboard}
+                    disabled={copied}
                     style={{
                         position: "fixed",
                         bottom: "100px",
@@ -176,6 +182,7 @@ const Main = () => {
                 {/* Dark mode button */}
                 <button
                     onClick={toggleDarkMode}
+                    disabled={isAnimating}
                     style={{
                         position: "fixed",
                         bottom: "20px",
@@ -193,6 +200,7 @@ const Main = () => {
                         height: "70px",
                         boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
                         transition: "transform 0.2s ease-in-out",
+                        opacity: isAnimating ? 0.5 : 1, // Optional: Add slight opacity to show it's disabled
                     }}
                     onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.1)")}
                     onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}

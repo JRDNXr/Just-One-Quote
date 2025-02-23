@@ -1,0 +1,27 @@
+.tooltip {
+    position: absolute;
+    top: 50%;
+    right: 110%;
+    /* Position to the left of the button */
+    transform: translateY(-50%);
+    /* Vertically center the tooltip */
+    margin-left: 10px;
+    /* Space between the button and the tooltip */
+    padding: 8px 12px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0s 0.3s;
+    /* Add delay to visibility */
+}
+
+button:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 1s;
+}

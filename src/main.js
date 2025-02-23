@@ -138,6 +138,7 @@ const Main = () => {
                     className={isSpinning ? "spinning" : ""}
                 >
                     <FaRedo color="#000" size={24} />
+                    <div className="tooltip">Refresh Quote</div>
                 </button>
 
                 {/* Copy button */}
@@ -177,6 +178,7 @@ const Main = () => {
                     ) : (
                         <FaCopy color="#000" size={24} />
                     )}
+                    <div className="tooltip">Copy Quote</div>
                 </button>
 
                 {/* Dark mode button */}
@@ -204,6 +206,7 @@ const Main = () => {
                     }}
                     onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.1)")}
                     onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
+                //title={isDarkMode ? "Toggle Light Mode" : "Toggle Dark Mode"}
                 >
                     {/* Icon: Moon for light mode, Sun for dark mode */}
                     {isDarkMode ? (
@@ -223,6 +226,9 @@ const Main = () => {
                             }}
                         />
                     )}
+                    <div className="tooltip">
+                        {isDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
+                    </div>
                 </button>
             </div>
         </div>

@@ -1,0 +1,27 @@
+@keyframes wipeDown {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes wipeUp {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.light-text {
+    color: #2c3e50 !important;
+}
+
+.dark-text {
+    color: #ecf0f1 !important;
+}

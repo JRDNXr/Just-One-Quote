@@ -35,7 +35,26 @@ const Main = () => {
         document.documentElement.style.backgroundColor = isDarkMode ? "#141f2c" : "#ecf0f1";
     }, [isDarkMode]);
 
-    // Toggle dark mode state
+    // Refresh Quote
+    const refreshPage = () => {
+        setIsSpinning(true); // Start spinning when the button is clicked
+        window.location.reload();
+    };
+
+    // Copy Quote
+    const copyToClipboard = () => {
+        if (copied) return; // Prevent toggling while animating
+
+        const fullQuote = authorName ? `${quoteText} - ${authorName}` : quoteText;
+        navigator.clipboard.writeText(fullQuote)
+            .then(() => {
+                setCopied(true);
+                setTimeout(() => setCopied(false), 2000);
+            })
+            .catch((err) => console.error("Failed to copy:", err));
+    };
+
+    // Dark Mode / Light Mode Toggle
     const toggleDarkMode = () => {
         if (isAnimating) return; // Prevent toggling while animating
 
@@ -51,22 +70,6 @@ const Main = () => {
             });
             setIsAnimating(false);
         }, 1000); // Duration of the wipe animation
-    };
-
-    // Refresh the page
-    const refreshPage = () => {
-        setIsSpinning(true); // Start spinning when the button is clicked
-        window.location.reload();
-    };
-
-    const copyToClipboard = () => {
-        const fullQuote = authorName ? `${quoteText} - ${authorName}` : quoteText;
-        navigator.clipboard.writeText(fullQuote)
-            .then(() => {
-                setCopied(true);
-                setTimeout(() => setCopied(false), 2000);
-            })
-            .catch((err) => console.error("Failed to copy:", err));
     };
 
     return (
@@ -140,6 +143,7 @@ const Main = () => {
                 {/* Copy button */}
                 <button
                     onClick={copyToClipboard}
+                    disabled={copied}
                     style={{
                         position: "fixed",
                         bottom: "100px",

@@ -37,6 +37,8 @@ const Main = () => {
 
     // Toggle dark mode state
     const toggleDarkMode = () => {
+        if (isAnimating) return; // Prevent toggling while animating
+
         setIsAnimating(true);
         setTimeout(() => {
             setTextColorClass(isDarkMode ? "light-text" : "dark-text");
@@ -176,6 +178,7 @@ const Main = () => {
                 {/* Dark mode button */}
                 <button
                     onClick={toggleDarkMode}
+                    disabled={isAnimating}
                     style={{
                         position: "fixed",
                         bottom: "20px",
@@ -193,6 +196,7 @@ const Main = () => {
                         height: "70px",
                         boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
                         transition: "transform 0.2s ease-in-out",
+                        opacity: isAnimating ? 0.5 : 1, // Optional: Add slight opacity to show it's disabled
                     }}
                     onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.1)")}
                     onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}

@@ -8,6 +8,15 @@
     }
 }
 
+.refresh-button:hover {
+    transform: scale(1.1);
+}
+
+.refresh-button.spinning {
+    transform: none !important;
+    /* Prevents scaling when spinning */
+}
+
 .spinning {
     animation: spin 1s linear infinite;
 }

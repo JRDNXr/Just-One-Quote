@@ -25,3 +25,8 @@
 .dark-text {
     color: #ecf0f1 !important;
 }
+
+.dark-mode {
+    background-color: #141f2c;
+    color: #ecf0f1;
+}

@@ -1,7 +1,7 @@
 /* Master CSS file. Imports every CSS file here so that main.js only has to import 1 CSS file. */
 
-@import url('./backgroundAnimation.css');
+@import url('./background.css');
 @import url('./buttonAnimations.css');
-@import url('./copyButtonCheckMark.css');
+@import url('./copyButton.css');
 @import url('./refreshButton.css');
 @import url('./tooltip.css');

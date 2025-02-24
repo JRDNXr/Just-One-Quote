@@ -36,9 +36,15 @@ const Main = () => {
     }, [isDarkMode]);
 
     // Refresh Quote
-    const refreshPage = () => {
+    const refreshQuote = () => {
         setIsSpinning(true); // Start spinning when the button is clicked
-        window.location.reload();
+
+        // Get a random quote from the quotes array
+        const newQuote = quotes[Math.floor(Math.random() * quotes.length)];
+        setRandomQuote(newQuote);
+
+        // Stop spinning after a short delay
+        setTimeout(() => setIsSpinning(false), 1000);
     };
 
     // Copy Quote
@@ -114,7 +120,7 @@ const Main = () => {
 
                 {/* Refresh button */}
                 <button
-                    onClick={refreshPage}
+                    onClick={refreshQuote}
                     style={{
                         position: "fixed",
                         bottom: "180px",

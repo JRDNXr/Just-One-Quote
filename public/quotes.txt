@@ -8,7 +8,7 @@ Where there’s a will, there’s a way.
 Facing all that you fear will free you from yourself.
 With great power comes great responsibility.
 If you're lonely when you're alone, you're in bad company.
-Everything is a dangerous drug except reality; which is unendurable.
+Everything is a dangerous drug except reality, which is unendurable.
 The last cloth you wear has no pockets.
 People are with you for a reason, a season, or a lifetime. You just don't know which.|Brian A. Chalker
 Only those who will risk going too far can possibly find out how far one can go.|T.S. Eliot
@@ -42,7 +42,7 @@ It is better to have loved and lost than to have never loved at all.|Alfred Lord
 Just because someone doesn't love you the way you want them to doesn't mean they don't love you with all they've got.
 Luck is nothing more than when preparation meets opportunity.
 If you only do what you can do, you will never be more than you are now.|Master Oogway (Kung Fu Panda)
-Yesterday is history, tomorrow is a mystery, but today is a gift. That is why it is called the present.|Master Oogway (Kung Fu Panda)
+Yesterday is history, tomorrow is a mystery but today is a gift. That is why it is called the present.|Master Oogway (Kung Fu Panda)
 The more you take, the less you have.|Master Oogway (Kung Fu Panda)
 Your mind is like water. When it is agitated, it becomes difficult to see. But if you allow it to settle, the answer becomes clear.|Master Oogway (Kung Fu Panda)
 One often meets his destiny on the road he takes to avoid it.|Master Oogway (Kung Fu Panda)
@@ -107,8 +107,8 @@ A dead-end street is a good place to turn around.|Naomi Judd
 Sometimes you will never know the value of a moment, until it becomes a memory.|Dr. Seuss
 Never give up hope, no matter how dark things seem.
 If you spend too much time looking back, you’ll miss what’s ahead.
-It is difficult to get a man to understand something when his salary depends on him not understanding it|Upton Sinclair
-I believe that things that are supposed to happen always find a way to happen. Sometimes they make sense, sometimes they don’t. And sometimes they really, really, hurt. But, it’s okay, because those things put us on a path to becoming who we’re meant to be.|Your Friendly Neighbourhood Spider-Man (2025)
+It is difficult to get a man to understand something when his salary depends on him not understanding it.|Upton Sinclair
+I believe that things that are supposed to happen always find a way to happen. Sometimes they make sense, sometimes they don’t. And sometimes they really, really, hurt. But, it’s okay, because those things put us on a path to becoming who we’re meant to be.|Peter Parker (Your Friendly Neighbourhood Spider-Man - 2025)
 Fear not for the future, weep not for the past.|Percy Bysshe Shelley
 If you ignore the past, you jeopardize the future.
 For everything you gain, you lose something else.
@@ -156,7 +156,7 @@ If opportunity doesn't knock, build a door.|Milton Berle
 It's not what you look at that matters, it's what you see.|Henry David Thoreau
 The only true wisdom is in knowing you know nothing.|Socrates
 If you live to be one hundred, I want to live to be a hundred minus one day so I never have to live without you.|A. A. Milne
-The pessimist complains about the wind; the opptimist expects it to change; the realist adjusts the sails.|William Arthur Ward
+The pessimist complains about the wind; the optimist expects it to change; the realist adjusts the sails.|William Arthur Ward
 The only thing necessary for the triumph of evil is for good men to do nothing.|Edmund Burke
 Leaders don't create more followers, they create more leaders.|Tom Peters
 A true friend is someone who thinks that you are a good egg even though he knows that you are slightly cracked.|Bernard Meltzer
@@ -165,3 +165,91 @@ Take care of your body. It's the only place you have to live.|Jim Rohn
 Run toward embarrassment, not away from it, and you take away its power.|Jay Pritchett (Modern Family)
 Never argue with stupid people, they will drag you down to their level then beat you with experience.|Mark Twain
 If you think you are too small to make a difference, try sleeping with a mosquito.|Dalai Lama
+Greatness is inspiring others to be their best.|Ken Poirot.
+Great leaders inspire greatness in others.|Lolly Daskal.
+Secrets have a cost, they are not for free.|Aunt May (The Amazing Spider-Man 2 -2014)
+Everybody has a story. And there's something to be learned from every experience.|Oprah Winfrey
+The only place where success comes before work is in the dictionary.|Vidal Sassoon
+If you can't fly, then run, if you can't run, then walk, if you can't walk, then crawl, but whatever you do, you have to keep moving forward.|Martin Luther King, Jr.
+It is during our darkest moments that we must focus to see the light.|Aristotle
+If you don't like the road you're walking, start paving another one." — Dolly Parton
+The child who is not embraced by the village will burn it down to feel its warmth.
+You can be cold, wet and miserable or you can just be cold and wet.
+We will never know what our grandchildren will know.
+You cannot see your reflection in boiling water. Similarly, you cannot see the truth in a state of anger. When the waters calm, clarity comes.
+Light travels faster than sound. This is why some people appear bright until you hear them speak.|Alan Dundes
+Who controls the past controls the future. Who controls the present controls the past.|George Orwell (1984)
+If you love life, don’t waste time, for time is what life is made up of.|Bruce Lee
+If you really want to do something, you’ll find a way. If you don’t, you’ll find an excuse.|Jim Rohn
+You can’t turn back the clock. But you can wind it up again.|Bonnie Prudden
+The only person you should try to be better than, is the person you were yesterday.
+When you feel like quitting, think about why you started.
+It's not one giant step that does it. It's lots of little steps.
+Results happen over time, not overnight.
+You may not realize it, but you're the reason someone smiled today.
+Work hard in silence, let success make the noise.
+Don't be afraid to start over. This time you're not starting from scratch. You're starting from experience.
+Love yourself first, because that's who you'll be spending the rest of your life with.
+Don't change yourself so that other people will like you. Be yourself so that the right person will love you.
+Take the risk or lose the chance.
+I used to think that the worst thing in life was to end up all alone. It's not. The worst thing in life is ending up with people who make you feel all alone.|Robin Williams
+I live by 3 simple rules. Love needs action. Trust needs proof. Sorry needs change.
+Don't tell people your plans. Show them your results.
+Do not wait to strike till the iron is hot; but make it hot by striking.|William B. Sprague
+There may never be a perfect time or a perfect place to begin. Start right now, from where you're standing.
+Some days are for conquering mountains, some days are for counting clouds. Only you know which one today should be.
+Hard times produce a strength inside us we never would have achieved without them.
+Age is an issue of mind over matter. If you don't mind, it doesn't matter.|Mark Twain
+You can't help getting older, but you don't have to get old.|George Burns
+Youth is a gift of nature, but age is a work of art.|Stanislaw Jerzy Lec
+Men are like wine - some turn to vinegar, but the best improve with age.|Pope John XXIII
+If not me, who? And if not now, when?
+Judge a man by his questions rather than his answers.|Voltaire
+Do not let what you cannot do interfere with what you can do.|John Wooden
+There are things known and there are things unknown, and in between are the doors of perception.|Aldous Huxley
+To every action there is always opposed an equal reaction.|Isaac Newton
+Be nice to people on your way up because you'll meet them on your way down.|Wilson Mizner
+Yesterday's home runs don't win today's games.|Babe Ruth
+Always be active, never reactive.|Black Canary (Young Justice)
+You often hear the phrase "it's the thought that counts". Well, all action results from thought, so it is the thoughts that matter.|Sai Baba
+You cannot step into the same river twice.|Heraclitus
+There is nothing permanent except change.|Heraclitus
+Once something is said, you can't take it back.|Jacinta D'Souza
+Dogs are not our whole life, but they make our lives whole.|Roger Caras
+Scratch a dog and you'll find a permanent job.|Franklin P. Jones
+When someone shows you who they are, believe them the first time.|Maya Angelou
+Success is falling nine times and getting up ten.|Jon Bon Jovi
+There are no secrets that time does not reveal.|Jean Racine
+Never interrupt your enemy when he is making a mistake.|Napoleon Bonaparte
+Slow and steady wins the race.|Robert Lloyd
+Knowledge speaks, but wisdom listens.|Jimi Jendrix
+Our dead are never dead to us, until we have forgotten them.|George Eliot
+If they can get you asking the wrong questions, they don't have to worry about answers.|Thomas Pynchon (Gravity's Rainbow)
+Give me 6 hours to chop a tree, I will spend the first 4 sharpening my axe.|Abraham Lincoln
+I always wonder why birds choose to stay in the same place when they can fly anywhere on earth. Then I ask myself the same question.|Harun Yahya
+A man who wants to lead the orchestra must turn his back on the crowd.|Max Lucado
+No snowflake in an avalanche ever feels responsible.
+What do they call the person who graduated last in his class in med school? Doctor.
+If you do not see humour in the serious, and the serious in humour, you have understood neither.
+In any moment of decision, the best thing you can do is the right thing. The worst thing you can do is nothing.|Theodore Roosevelt
+A song is more than just the last few notes.
+Silence is part of the music and our love is an orchestra.
+The bigger the mountain, the better the view.
+Believe those who are seeking the truth. Doubt those who find it.|André Gide
+If you love a flower, don’t pick it up. Because if you pick it up, it dies, and it ceases to be what you love. So if you love a flower, let it be. Love is not about possession. Love is about appreciation.|Osho
+Sometimes I think the surest sign that intelligent life exists elsewhere in the universe is that none of it has tried to contact us.|Calvin (Calvin and Hobbes)
+We can't solve problems by using the same kind of thinking we used when we created them.|Albert Einstein
+Never think that war, no matter how necessary, nor how justified, is not a crime.|Ernest Hemingway
+War may sometimes be a necessary evil, but no matter how necessary, it is always an evil, never a good.|Jimmy Carter
+I have noticed that people who claim everything is predestined, and we can do nothing to change it, look both ways before crossing the road.|Stephen Hawking
+You miss 100% of the shots you don't take.|Wayne Gretzky
+Don't tell me the sky's the limit when there are footprints on the moon.|Paul Brandt
+The right man in the wrong place can make all the difference in the world.|G-Man (Half-Life 2)
+You die twice. One time when you stop breathing, and a second time, a bit later on, when someone says your name for the last time.
+Progress happens too slowly to notice, but setbacks happen too quickly to ignore.|Morgan Housel
+Two basic rules about winning in life: If you don’t bet, you can’t win. If you lose all your chips, you can’t bet.|Larry Hite
+The two most important days in your life are the day you are born and the day you find out why.|Mark Twain
+You can’t have good ideas unless you’re willing to generate a lot of bad ones.|Seth Godin
+Birds born in a cage think flying is an illness.|Alejandro Jodorowsky
+Money can't buy happiness, but it can protect you from the things that cause unhappiness.
+Be happy with what you have while you work for what you want.|Helen Keller

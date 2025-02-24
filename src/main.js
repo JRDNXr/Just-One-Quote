@@ -12,6 +12,7 @@ const Main = () => {
     const [quotes, setQuotes] = useState([]);
     const [randomQuote, setRandomQuote] = useState(""); // State to store a single random quote when the component mounts
     const [isSpinning, setIsSpinning] = useState(false); // State to track if the refresh button should spin
+    const [isHovered, setIsHovered] = useState(false);
     const [copied, setCopied] = useState(false); // State to track if the copy button was clicked
     const [isAnimating, setIsAnimating] = useState(false); // State to track if the background is animating
     const [textColorClass, setTextColorClass] = useState(""); // State to track the text color class
@@ -35,10 +36,25 @@ const Main = () => {
         document.documentElement.style.backgroundColor = isDarkMode ? "#141f2c" : "#ecf0f1";
     }, [isDarkMode]);
 
+    const handleClick = () => {
+        if (isSpinning) return;
+        setIsSpinning(true);
+        refreshQuote();
+        setTimeout(() => setIsSpinning(false), 1000);
+    }
+
     // Refresh Quote
-    const refreshPage = () => {
-        setIsSpinning(true); // Start spinning when the button is clicked
-        window.location.reload();
+    const refreshQuote = () => {
+        //if (isSpinning) return; // Prevent refreshing while animating
+
+        //setIsSpinning(true); // Start spinning when the button is clicked
+
+        // Get a random quote from the quotes array
+        const newQuote = quotes[Math.floor(Math.random() * quotes.length)];
+        setRandomQuote(newQuote);
+
+        // Stop spinning after a short delay
+        //setTimeout(() => setIsSpinning(false), 1000);
     };
 
     // Copy Quote
@@ -114,14 +130,15 @@ const Main = () => {
 
                 {/* Refresh button */}
                 <button
-                    onClick={refreshPage}
+                    onClick={handleClick}
+                    disabled={isSpinning}
                     style={{
                         position: "fixed",
                         bottom: "180px",
                         right: "20px",
                         padding: "20px",
                         fontSize: "30px",
-                        cursor: "pointer",
+                        cursor: isSpinning ? "not-allowed" : "pointer",
                         backgroundColor: "#fff",
                         border: "none",
                         borderRadius: "50%",
@@ -131,14 +148,21 @@ const Main = () => {
                         width: "70px",
                         height: "70px",
                         boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-                        transition: "transform 0.2s ease-in-out",
+                        transition: isSpinning ? "none" : "transform 0.2s ease-in-out",
+                        opacity: isSpinning ? 0.5 : 1,
+                        pointerEvents: isSpinning ? "none" : "auto",
+                        transform: isSpinning ? "scale(1)" : undefined,
                     }}
-                    onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.1)")}
-                    onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
-                    className={isSpinning ? "spinning" : ""}
+                    onMouseEnter={(e) => {
+                        if (!isSpinning) e.currentTarget.style.transform = "scale(1.1)";
+                    }}
+                    onMouseLeave={(e) => {
+                        e.currentTarget.style.transform = "scale(1)";
+                    }}
+                    className={`refresh-button ${isSpinning ? "spinning" : ""}`}
                 >
-                    <FaRedo color="#000" size={24} />
-                    <div className="tooltip">Refresh Quote</div>
+                    <FaRedo color="#000" size={24} className={isSpinning ? "spinning" : ""} />
+                    {!isSpinning && <div className="tooltip">Refresh Quote</div>}
                 </button>
 
                 {/* Copy button */}
@@ -206,7 +230,6 @@ const Main = () => {
                     }}
                     onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.1)")}
                     onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
-                //title={isDarkMode ? "Toggle Light Mode" : "Toggle Dark Mode"}
                 >
                     {/* Icon: Moon for light mode, Sun for dark mode */}
                     {isDarkMode ? (

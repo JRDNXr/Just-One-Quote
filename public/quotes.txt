@@ -108,7 +108,7 @@ Sometimes you will never know the value of a moment, until it becomes a memory.|
 Never give up hope, no matter how dark things seem.
 If you spend too much time looking back, you’ll miss what’s ahead.
 It is difficult to get a man to understand something when his salary depends on him not understanding it.|Upton Sinclair
-I believe that things that are supposed to happen always find a way to happen. Sometimes they make sense, sometimes they don’t. And sometimes they really, really, hurt. But, it’s okay, because those things put us on a path to becoming who we’re meant to be.|Peter Parker (Your Friendly Neighbourhood Spider-Man - 2025)
+I believe that things that are supposed to happen always find a way to happen. Sometimes they make sense, sometimes they don’t. And sometimes they really, really, hurt. But, it’s okay, because those things put us on a path to becoming who we’re meant to be.|Peter Parker (Your Friendly Neighbourhood Spider-Man [2025])
 Fear not for the future, weep not for the past.|Percy Bysshe Shelley
 If you ignore the past, you jeopardize the future.
 For everything you gain, you lose something else.
@@ -134,9 +134,9 @@ Everything happens for a reason. We may not understand it. We may not like it. B
 Time waits for nobody.
 You cannot control the waves, but you can learn to surf.|Jon Kabat-Zinn
 When we are no longer able to change a situation, we are challenged to change ourselves.|Viktor Frankl
-The thing about losing everything is that it teaches you how strong you really are.|Katara (Avatar: The Last Airbender - 2024)
+The thing about losing everything is that it teaches you how strong you really are.|Katara (Avatar: The Last Airbender [2024])
 It’s only after we’ve lost something that we truly realize how much it meant to us.
-Sometimes we hide behind a mask, afraid of how others will see us. It's not hard to understand why. What's hard is knowing that sometimes, the mask is who you really are.|Iroh (Avatar: The Last Airbender - 2024)
+Sometimes we hide behind a mask, afraid of how others will see us. It's not hard to understand why. What's hard is knowing that sometimes, the mask is who you really are.|Iroh (Avatar: The Last Airbender [2024])
 Be yourself; everyone else is already taken.|Oscar Wilde
 You've gotta dance like there's nobody watching, Love like you'll never be hurt, Sing like there's nobody listening, and live like it's heaven on earth.|William W. Purkey
 You know you're in love when you can't fall asleep because reality is finally better than your dreams.|Dr. Seuss 
@@ -167,7 +167,7 @@ Never argue with stupid people, they will drag you down to their level then beat
 If you think you are too small to make a difference, try sleeping with a mosquito.|Dalai Lama
 Greatness is inspiring others to be their best.|Ken Poirot.
 Great leaders inspire greatness in others.|Lolly Daskal.
-Secrets have a cost, they are not for free.|Aunt May (The Amazing Spider-Man 2 -2014)
+Secrets have a cost, they are not for free.|Aunt May (The Amazing Spider-Man 2 [2014])
 Everybody has a story. And there's something to be learned from every experience.|Oprah Winfrey
 The only place where success comes before work is in the dictionary.|Vidal Sassoon
 If you can't fly, then run, if you can't run, then walk, if you can't walk, then crawl, but whatever you do, you have to keep moving forward.|Martin Luther King, Jr.
@@ -210,7 +210,7 @@ There are things known and there are things unknown, and in between are the door
 To every action there is always opposed an equal reaction.|Isaac Newton
 Be nice to people on your way up because you'll meet them on your way down.|Wilson Mizner
 Yesterday's home runs don't win today's games.|Babe Ruth
-Always be active, never reactive.|Black Canary (Young Justice)
+You should always be acting, never reacting.|Dilah Lance (Black Canary) (Young Justice)
 You often hear the phrase "it's the thought that counts". Well, all action results from thought, so it is the thoughts that matter.|Sai Baba
 You cannot step into the same river twice.|Heraclitus
 There is nothing permanent except change.|Heraclitus
@@ -253,3 +253,67 @@ You can’t have good ideas unless you’re willing to generate a lot of bad one
 Birds born in a cage think flying is an illness.|Alejandro Jodorowsky
 Money can't buy happiness, but it can protect you from the things that cause unhappiness.
 Be happy with what you have while you work for what you want.|Helen Keller
+Life is not the amount of breaths you take. It’s the moments that take your breath away.|Alex Hitch
+When a defining moment comes along, you can do one of two things. Define the moment, or let the moment define you.|Roy McAvoy
+Why are you trying so hard to fit in when you were born to stand out?|Ian (What a Girl Wants)
+Sometimes the right path is not the easiest one.|Grandmother (Willow Pocahontas)
+If it was easy, everybody would do it.|Eric Thomas
+We build too many walls and not enough bridges.|James Fort Newton
+Everyone you will ever meet knows something you don’t.|Bill Nye
+If you set your goals ridiculously high and it’s a failure, you will fail above everyone else’s success.|James Cameron
+An inch of movement will bring you closer to your goals than a mile of intention.|Steve Maraboli
+If we can’t see the good in each other, we’ve already lost.|Sam Wilson (Captain America - Brave New World [2025])
+The struggle you’re in today is developing the strength you need for tomorrow.|Robert Tew
+Success usually comes to those who are too busy to be looking for it.|Henry David Thoreau
+The secret of getting ahead is getting started.|Mark Twain
+To learn to succeed, you must first learn to fail.|Michael Jordan
+In the middle of difficulty lies opportunity.|Albert Einstein
+Nothing lasts forever.
+Sometimes less is more.
+Sometimes even the right intentions lead to the wrong outcomes.
+The only real mistake is the one from which we learn nothing.|Henry Ford
+I never lose. I either win or learn.|Nelson Mandela
+Great minds discuss ideas; average minds discuss events; small minds discuss people.|Eleanor Roosevelt
+Never look back unless you are planning to go that way.|Henry David Thoreau
+Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.|Albert Schweitzer
+It is not in the stars to hold our destiny but in ourselves.|William Shakespeare
+Right is right even if no one is doing is. Wrong is wrong even if everybody is doing it.|Saint Augustine
+When life knocks you down, try to land on your back. Because if you can look up, you can get up.|Les Brown
+A pure hand needs no gloves to cover it.|Nathaniel Hawthorne
+The pen is mightier than the sword.|Edward Bulwer-Lytton
+Life is a sum of all of your choices. So what are you doing today?|Albert Camus
+The only way to guarantee meaningful positive change in the next 365 days around the sun is to exit your comfort zone and relentlessly attack your goals.|Marques Brownlee
+When the going gets tough, the tough gets going.|Joseph P. Kennedy
+You are what you eat.|Jean Anthelme Brillat-Savarin
+Forgive, but never forget.
+A door is much smaller compared to a house, a lock is much smaller compared to the door and a key is the smallest of all, yet a key can open an entire house. A small solution can solve the biggest problems.
+Genius is eternal patience.|Michelangelo
+Failure is but a milestone on the path of success.
+One bad chapter doesn’t mean your story is over.
+When life gets blurry, adjust your focus.
+What you try to hide often becomes what people seek the most.
+There are times when things are simply beyond our control.
+An apple a day keeps the doctor away.
+The best investment you can make is in yourself.|Warren Buffett
+An empty lantern provides no light. Self-care is the fuel that allows your light to shine brightly.
+Be forgiving. Be understanding. But do not be a fool.
+Respect is a two-way street.
+Death is not the end; it is simply the beginning of a new chapter.
+There’s always a bigger fish.
+Don’t bite the hand that feeds.
+People often regret the chances they didn’t take more than those they did.
+Don’t let the small stuff weigh you down.
+Don't make a mountain out of a mole hill.
+Don’t count the days, make the days count.|Muhammad Ali
+You must be the change you wish to see in the world.|Mahatma Gandhi
+The only way to have a friend is to be one.|Ralph Waldo Emerson
+Be yourself. An original is always worth more than a copy.
+Sometimes the best thing you can do is nothing.
+The time you enjoy wasting is not wasted time.
+The best kept secrets are the ones never told.
+Trust takes years to build, seconds to break, and forever to repair.
+Trust is like a vase; once it’s broken, though you can fix it, the vase will never be the same again.|Walter Anderson
+A lie can travel halfway around the world while the truth is putting on its shoes.|Charles Spurgeon
+A man who trusts nobody is apt to be the kind of man nobody trusts.|Harold MacMillan
+Keep your eyes on the stars and your feet on the ground.|Theodore Roosevelt
+Dreams are not what you see in your sleep, but the things that don’t let you sleep.|A.P.J. Abdul Kalam

@@ -12,7 +12,6 @@ const Main = () => {
     const [quotes, setQuotes] = useState([]);
     const [randomQuote, setRandomQuote] = useState(""); // State to store a single random quote when the component mounts
     const [isSpinning, setIsSpinning] = useState(false); // State to track if the refresh button should spin
-    const [isHovered, setIsHovered] = useState(false);
     const [copied, setCopied] = useState(false); // State to track if the copy button was clicked
     const [isAnimating, setIsAnimating] = useState(false); // State to track if the background is animating
     const [textColorClass, setTextColorClass] = useState(""); // State to track the text color class
@@ -45,16 +44,8 @@ const Main = () => {
 
     // Refresh Quote
     const refreshQuote = () => {
-        //if (isSpinning) return; // Prevent refreshing while animating
-
-        //setIsSpinning(true); // Start spinning when the button is clicked
-
-        // Get a random quote from the quotes array
         const newQuote = quotes[Math.floor(Math.random() * quotes.length)];
         setRandomQuote(newQuote);
-
-        // Stop spinning after a short delay
-        //setTimeout(() => setIsSpinning(false), 1000);
     };
 
     // Copy Quote

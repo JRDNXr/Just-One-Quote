@@ -129,7 +129,7 @@ const Main = () => {
                         right: "20px",
                         padding: "20px",
                         fontSize: "30px",
-                        cursor: isSpinning ? "not-allowed" : "pointer",
+                        cursor: isSpinning ? "not-allowed" : "pointer", // Correct cursor style
                         backgroundColor: "#fff",
                         border: "none",
                         borderRadius: "50%",
@@ -141,7 +141,7 @@ const Main = () => {
                         boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
                         transition: isSpinning ? "none" : "transform 0.2s ease-in-out",
                         opacity: isSpinning ? 0.5 : 1,
-                        pointerEvents: isSpinning ? "none" : "auto",
+                        pointerEvents: isSpinning ? "none" : "auto", // Ensure pointerEvents are disabled for spinning
                         transform: isSpinning ? "scale(1)" : undefined,
                     }}
                     onMouseEnter={(e) => {

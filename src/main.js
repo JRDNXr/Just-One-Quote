@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaMoon, FaSun, FaRedo, FaCopy, FaCheck } from "react-icons/fa"; // Import moon, sun, refresh, copy, and
 // checkmark icons from React Icons
-import './styles/main.css';
+import './styles/main/main.css';
 
 const Main = () => {
     // Load dark mode setting from localStorage (default is false)

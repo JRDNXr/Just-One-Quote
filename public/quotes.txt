@@ -397,7 +397,7 @@ Pain is inevitable. Suffering is optional.|Haruki Murakami
 The greater the obstacle, the more glory in overcoming it.|Molière
 You cannot swim for new horizons until you have courage to lose sight of the shore.|William Faulkner
 Problems are not stop signs; they are guidelines.|Robert H. Schuller
-Life is like a beautiful melody, only the lyrics are messed up.” — Hans Christian Andersen
+Life is like a beautiful melody, only the lyrics are messed up.|Hans Christian Andersen
 When you’re happy, you enjoy the music. But when you’re sad, you understand the lyrics.|Frank Ocean
 Do your best until you know better. Then, when you know better, do better.Maya Angelou
 Excellence is not an act, but a habit.|Aristotle
@@ -415,3 +415,6 @@ Learn from yesterday, live for today, hope for tomorrow.|Albert Einstein
 There is a crack in everything, that’s how the light gets in.|Leonard Cohen
 Hope sees the invisible, feels the intangible, and achieves the impossible.|Helen Keller
 When you’re at the end of your rope, tie a knot and hold on.|Theodore Roosevelt
+Be careful what you wish for, as it may one day come true.
+In the land of the blind, the one-eyed man is king.|Desiderius Erasmus
+He would see the entire world burn just to be the king of ashes.

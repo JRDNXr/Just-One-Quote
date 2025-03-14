@@ -268,7 +268,7 @@ Success usually comes to those who are too busy to be looking for it.|Henry Davi
 The secret of getting ahead is getting started.|Mark Twain
 To learn to succeed, you must first learn to fail.|Michael Jordan
 In the middle of difficulty lies opportunity.|Albert Einstein
-Nothing lasts forever.
+Nothing truly lasts forever.
 Sometimes less is more.
 Sometimes even the right intentions lead to the wrong outcomes.
 The only real mistake is the one from which we learn nothing.|Henry Ford
@@ -285,7 +285,7 @@ Life is a sum of all of your choices. So what are you doing today?|Albert Camus
 The only way to guarantee meaningful positive change in the next 365 days around the sun is to exit your comfort zone and relentlessly attack your goals.|Marques Brownlee
 When the going gets tough, the tough gets going.|Joseph P. Kennedy
 You are what you eat.|Jean Anthelme Brillat-Savarin
-Forgive, but never forget.
+Forgive, but never forget, since it’s the lessons learned that shape who you are today.
 A door is much smaller compared to a house, a lock is much smaller compared to the door and a key is the smallest of all, yet a key can open an entire house. A small solution can solve the biggest problems.
 Genius is eternal patience.|Michelangelo
 Failure is but a milestone on the path of success.
@@ -346,17 +346,112 @@ If it sounds too good to be true, it probably is.
 Never put off till tomorrow what you can do today.
 A smooth sea never made a skilled sailor.
 An eye for an eye, and the whole world goes blind.
-Be careful what you wish for.
 Appearances can be deceiving.
 A problem shared is a problem halved.
-If you fight fire with fire, you’ll get burned.
+When you fight fire with fire, everyone gets burnt.
 Absence makes the heart grow fonder.
-One man’s trash is another man’s treasure
+One man’s trash is another man’s treasure.
 A rolling stone gathers no moss.
 Beauty is in the eye of the beholder.
 Fear the wrath of a patient man.
 In through one ear and out through the other.
-Captain Jack Sparrow
 I’ve been called worse things by better men.|Captain Jack Sparrow (Pirates of the Caribbean: The Curse of the Black Pearl [2003])
-Pick your battles.
+Pick your battles wisely and focus your energy on what truly matters.
 You always have a choice.
+Never say never.
+Just one positive thought in the morning can change your whole day.|Dalia Lama
+If I am worth anything later, I am worth something now.|Vincent van Gogh
+When you can't find your purpose in a day, make it to look after yourself.|Dodie Clark
+Life is what happens to you while you're busy making other plans.|John Lennon
+The key to immortality is first living a life worth remembering.|Bruce Lee
+In a time of deceit, telling the truth is a revolutionary act.|George Orwell
+Everyday is a school day.
+What good is the mission if we lose ourselves trying to fulfil it?|Jefferson Pierce (Young Justice)
+Pride always hurts. It never helps.|Marcellus Wallace
+You can’t reason someone out of a position they didn’t reason themselves into.|Jonathan Swift
+Everything that has a beginning has an ending. Make your peace with that and all will be well.|Buddha
+There is no path to happiness: happiness is the path.|Buddha
+Those who gossip to you will gossip about you.
+People who talk behind others’ backs will talk behind yours too.
+Curiosity opens doors—never hesitate to ask questions.
+Democracy crumbles when truth is silenced, power goes unchecked, and the people’s voice fades into apathy.
+The worst person to lie to is yourself -- you’ll believe it, live by it, and suffer for it.
+Those who lift heavy today once struggled with the lightest weights.
+You can’t help somebody without helping yourself first.
+You can’t pour from an empty cup.
+There is no enemy like a friend betrayed.
+People who live in glass houses shouldn’t throw stones.
+The means don’t always justify the ends.
+One way to win is to know every way to lose.
+The best way out is always through.|Robert Frost
+The darkest hour has only sixty minutes.|Morris Mandel
+Sometimes adversity is what you need to face in order to become successful.|Zig Ziglar
+Life isn’t about waiting for the storm to pass; it’s about learning to dance in the rain.|Vivian Greene
+You have power over your mind, not outside events. Realize this, and you will find strength.|Marcus Aurelius
+Perseverance is not a long race; it is many short races one after the other.|Walter Elliot
+A problem is a chance for you to do your best.|Duke Ellington
+A diamond is a chunk of coal that did well under pressure.|Henry Kissinger
+Pain is inevitable. Suffering is optional.|Haruki Murakami
+The greater the obstacle, the more glory in overcoming it.|Molière
+You cannot swim for new horizons until you have courage to lose sight of the shore.|William Faulkner
+Problems are not stop signs; they are guidelines.|Robert H. Schuller
+Life is like a beautiful melody, only the lyrics are messed up.|Hans Christian Andersen
+When you’re happy, you enjoy the music. But when you’re sad, you understand the lyrics.|Frank Ocean
+Do your best until you know better. Then, when you know better, do better.Maya Angelou
+Excellence is not an act, but a habit.|Aristotle
+Take it one step at a time.
+How do you solve an unsolvable problem? You change the way you see it until the solution reveals itself.
+Tackle big problems by breaking them into small steps.
+Be someone who helps another straighten their crown without telling the world it was ever crooked.
+History was written by the victors, but the truth often lies in the untold stories.
+There’s more to this than meets the eye.
+Money comes and goes, but true friendships last forever.
+Hope is being able to see that there is light despite all of the darkness.|Desmond Tutu
+Hope is the only thing stronger than fear.|Suzanne Collins
+We must accept finite disappointment, but never lose infinite hope.|Martin Luther King Jr.
+Learn from yesterday, live for today, hope for tomorrow.|Albert Einstein
+There is a crack in everything, that’s how the light gets in.|Leonard Cohen
+Hope sees the invisible, feels the intangible, and achieves the impossible.|Helen Keller
+When you’re at the end of your rope, tie a knot and hold on.|Theodore Roosevelt
+Be careful what you wish for, as it may one day come true.
+In the land of the blind, the one-eyed man is king.|Desiderius Erasmus
+He would see the entire world burn just to be the king of ashes.
+The best time to plant a tree is 20 years ago. The 2nd best time is today.
+Always put your best foot forward.
+Live, laugh, and love.
+Life is too short to wait for the perfect moment.
+Always put your best foot forward, not for others, but because you deserve to see what you’re truly capable of.
+Time waits for nobody, so don’t waste it waiting for the perfect moment.
+Life can change in an instant, so don’t waste a second of it.
+Holding grudges only chains you to the past -- let go and make room for happiness.
+Time is the most valuable resource we have -- once it’s gone, we can never get it back, so use it wisely.
+Being human is about making mistakes, learning from them, and growing stronger with each step.
+If you spend your whole life waiting for the storm, you’ll never enjoy the sunshine.|Morris West
+Rise above the storm, and you will find the sunshine.|Mario Fernandez
+Even on a cloudy day, the sun is shining somewhere!
+If you want to see the sunshine, you have to weather the storm.|Frank Lane
+Light is to darkness what love is to fear; in the presence of one, the other disappears.|Marianne Williamson
+The sun watches what I do, but the moon knows all my secrets.|J.M. Wonderland
+There is nothing more beautiful than a rainbow, but it takes both rain and sunshine to make a rainbow.|Roy T. Bennett
+There are things in this world that we will never truly understand, and that’s what makes life both mysterious and beautiful.
+Second chances are a reminder that no mistake is final; it’s never too late to rewrite your story.
+Everyone deserves a second chance, because growth often begins where mistakes end.
+Stay true to yourself, even when the world tries to change you.
+People can change, but not everybody will.
+Accept the things you can change, and find peace in the things you can’t.
+If it were easy, everyone would be doing it.
+There is no such thing as a normal human being. Everybody is different.
+Normality is a paved road: It's comfortable to walk, but no flowers grow on it.|Vincent Van Gogh
+Normal is not something to aspire to, it's something to get away from.|Jodie Foster
+If you are always trying to be normal you will never know how amazing you can be.|Maya Angelou
+We build walls around ourselves to feel safe, but it’s tearing them down that brings us true security.
+When an opportunity arises, take a leap of faith and trust the journey ahead.
+If you want to fly, give up everything that weighs you down.|Buddha
+Dream big and dare to fail.|Norman Vaughan
+Don’t let yesterday take up too much of today.|Will Rogers
+Perfection is not attainable, but if we chase perfection we can catch excellence.|Vince Lombardi
+There is only one way to avoid criticism: do nothing, say nothing, and be nothing.|Aristotle
+A year from now you may wish you had started today.|Karen Lamb
+We can’t help everyone, but everyone can help someone.|Ronald Reagan
+Don’t burn bridges -- you never know when you might need to cross them again.
+Heaviest is he who wears the crown.

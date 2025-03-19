@@ -4,7 +4,7 @@ import './styles/footer/footer.css';
 const Footer = () => {
     return (
         <footer className="footer">
-            <p>Made with 🍪 by JRDN D'Souza. © 2025 JRDN Enterprises.</p>
+            <p>Made with 🍪 by JRDN D'Souza. © 2025</p>
         </footer>
     );
 };

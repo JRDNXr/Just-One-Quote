@@ -1,37 +1,35 @@
 import React, { useState, useEffect } from "react";
-import { FaMoon, FaSun, FaRedo, FaCopy, FaCheck } from "react-icons/fa"; // Import moon, sun, refresh, copy, and
-// checkmark icons from React Icons
+import { FaMoon, FaSun, FaRedo, FaCopy, FaCheck } from "react-icons/fa";
 import './styles/main/main.css';
 
 const Main = () => {
-    // Load dark mode setting from localStorage (default is false)
     const [isDarkMode, setIsDarkMode] = useState(() => {
         return localStorage.getItem("darkMode") === "true";
     });
 
     const [quotes, setQuotes] = useState([]);
-    const [randomQuote, setRandomQuote] = useState(""); // State to store a single random quote when the component mounts
-    const [isSpinning, setIsSpinning] = useState(false); // State to track if the refresh button should spin
-    const [isHovered, setIsHovered] = useState(false);
-    const [copied, setCopied] = useState(false); // State to track if the copy button was clicked
-    const [isAnimating, setIsAnimating] = useState(false); // State to track if the background is animating
-    const [textColorClass, setTextColorClass] = useState(""); // State to track the text color class
+    const [randomQuote, setRandomQuote] = useState(null);
+    const [isSpinning, setIsSpinning] = useState(false);
+    const [copied, setCopied] = useState(false);
+    const [isAnimating, setIsAnimating] = useState(false);
+    const [textColorClass, setTextColorClass] = useState("");
 
-    const splitQuote = randomQuote.split("|");
-    const quoteText = splitQuote[0]?.trim();
-    const authorName = splitQuote[1]?.trim()
+    // Extract quote and author from the randomQuote object
+    const quoteText = randomQuote?.quote || "";
+    const authorName = randomQuote?.author || "";
 
+    // Load quotes from JSON
     useEffect(() => {
-        fetch("/quotes.txt")
-            .then((response) => response.text())
+        fetch("/quotes.json")
+            .then((response) => response.json())
             .then((data) => {
-                const quotesArray = data.split("\n").map((quote) => quote.trim()).filter((quote) => quote);
-                setQuotes(quotesArray);
-                setRandomQuote(quotesArray[Math.floor(Math.random() * quotesArray.length)]);
+                setQuotes(data);
+                setRandomQuote(data[Math.floor(Math.random() * data.length)]);
             })
             .catch((error) => console.error("Error loading quotes:", error));
     }, []);
 
+    // Background color toggle
     useEffect(() => {
         document.documentElement.style.backgroundColor = isDarkMode ? "#141f2c" : "#ecf0f1";
     }, [isDarkMode]);
@@ -41,25 +39,17 @@ const Main = () => {
         setIsSpinning(true);
         refreshQuote();
         setTimeout(() => setIsSpinning(false), 1000);
-    }
-
-    // Refresh Quote
-    const refreshQuote = () => {
-        //if (isSpinning) return; // Prevent refreshing while animating
-
-        //setIsSpinning(true); // Start spinning when the button is clicked
-
-        // Get a random quote from the quotes array
-        const newQuote = quotes[Math.floor(Math.random() * quotes.length)];
-        setRandomQuote(newQuote);
-
-        // Stop spinning after a short delay
-        //setTimeout(() => setIsSpinning(false), 1000);
     };
 
-    // Copy Quote
+    const refreshQuote = () => {
+        if (quotes.length > 0) {
+            const newQuote = quotes[Math.floor(Math.random() * quotes.length)];
+            setRandomQuote(newQuote);
+        }
+    };
+
     const copyToClipboard = () => {
-        if (copied) return; // Prevent toggling while animating
+        if (copied || !quoteText) return;
 
         const fullQuote = authorName ? `${quoteText} - ${authorName}` : quoteText;
         navigator.clipboard.writeText(fullQuote)
@@ -70,22 +60,20 @@ const Main = () => {
             .catch((err) => console.error("Failed to copy:", err));
     };
 
-    // Dark Mode / Light Mode Toggle
     const toggleDarkMode = () => {
-        if (isAnimating) return; // Prevent toggling while animating
+        if (isAnimating) return;
 
         setIsAnimating(true);
         setTimeout(() => {
             setTextColorClass(isDarkMode ? "light-text" : "dark-text");
-        }, 380); // Halfway through the animation
+        }, 380);
+
         setTimeout(() => {
-            setIsDarkMode((prevMode) => {
-                const newMode = !prevMode;
-                localStorage.setItem("darkMode", newMode);
-                return newMode;
-            });
+            const newMode = !isDarkMode;
+            localStorage.setItem("darkMode", newMode);
+            setIsDarkMode(newMode);
             setIsAnimating(false);
-        }, 1000); // Duration of the wipe animation
+        }, 1000);
     };
 
     return (
@@ -226,28 +214,15 @@ const Main = () => {
                         height: "70px",
                         boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
                         transition: "transform 0.2s ease-in-out",
-                        opacity: isAnimating ? 0.5 : 1, // Optional: Add slight opacity to show it's disabled
+                        opacity: isAnimating ? 0.5 : 1,
                     }}
                     onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.1)")}
                     onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
                 >
-                    {/* Icon: Moon for light mode, Sun for dark mode */}
                     {isDarkMode ? (
-                        <FaSun
-                            color="#000"
-                            size={30}
-                            style={{
-                                animation: "fadeUp 0.5s forwards", // Sun comes from the top
-                            }}
-                        />
+                        <FaSun color="#000" size={30} style={{ animation: "fadeUp 0.5s forwards" }} />
                     ) : (
-                        <FaMoon
-                            color="#fff"
-                            size={30}
-                            style={{
-                                animation: "fadeDown 0.5s forwards", // Moon fades downwards
-                            }}
-                        />
+                        <FaMoon color="#fff" size={30} style={{ animation: "fadeDown 0.5s forwards" }} />
                     )}
                     <div className="tooltip">
                         {isDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
